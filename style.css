@@ -1,0 +1,511 @@
+body {
+color: white;
+background:  
+    linear-gradient(
+    to right, 
+    #000000 0%, 
+    #333333 15%, 
+    #000000 30%, 
+    #333333 45%, 
+    #000000 60%, 
+    #333333 75%, 
+    #000000 90%, 
+    #333333 100%
+  );
+
+font-family:Courier New;
+font-size:8pt;
+font-style:bold;
+font-weight:800;
+
+text-align:justify;
+line-height:1em;
+letter-spacing:0.9em;
+
+word-spacing:-0.4em;
+text-transform:capitalize;
+text-decoration:;
+word-break:break-all;
+word-wrap:;
+
+margin:6%;
+padding:5%;
+
+border-top:1em dotted grey;
+border-bottom:;
+border-left:;
+border-right:;
+border-color:white;
+border-style:;
+border-radius:;
+
+list-style:;
+list-style-position:;
+list-style-type:;
+
+display:;
+position:;
+top:;
+right:;
+bottom:;
+left:;
+float:;
+clear:;
+z-index:;
+visibility:;
+
+height:;
+width:;
+max-height:;
+max-width:;
+min-height:;
+min-width:;
+  }
+
+h1 {
+color:white;
+background:;
+
+font-family:;
+font-size:7em;
+font-style:italic;
+font-weight:;
+
+text-align:center;
+line-height:0.8;
+letter-spacing:;
+word-spacing:;
+
+text-transform:uppercase;
+text-decoration:overline wavy black;
+word-break:;
+word-wrap:;
+
+border-top:1em double grey; 
+border-bottom:0.2em dashed white;
+border-left:2em dotted white;
+border-right:;
+border-color:;
+border-style:dashed;
+border-radius:3%;
+
+list-style:decimal circle ;
+list-style-position:;
+list-style-type:;
+
+display:;
+right:;
+bottom:;
+
+float:;
+clear:;
+z-index:;
+visibility:;
+
+
+height:;
+width:;
+max-height:;
+max-width:;
+min-height:;
+min-width:;
+margin:1em -10% 1em -10%;
+  }
+
+h2 {
+  color:;
+  background: ;
+  font-family: ;
+  font-size:3em;
+  font-style: ;
+  font-weight:900 ;
+  text-align: ;
+  text-shadow: ;
+  line-height:;
+  letter-spacing: -1.2em;
+  word-spacing: ;
+  text-transform: uppercase;
+  text-decoration: underline dotted;
+  word-break: ;
+  word-wrap: ;
+  margin: ;
+  padding: ;
+  border-top: 2em solid black;
+  border-bottom: ;
+  border-left: 3em double grey; 
+  border-right: ;
+  border-color: ;
+  border-style: ;
+  border-radius: 3em;
+  list-style: ;
+  list-style-position: ;
+  list-style-type: circle;
+  display: ;
+  position:relative;
+  top: -2em;
+  right: ;
+  bottom: ;
+  left: ;
+  float: ;
+  clear: ;
+  z-index: ;
+  visibility: ;
+  height: ;
+  width: ;
+  max-height: ;
+  max-width: ;
+  min-height: ;
+  min-width: ;
+  transform: ;
+   }
+
+h3 {
+  color: ;
+  background: ghostwhite;
+  font-family: ;
+  font-size: 2em;
+  font-style: ;
+  font-weight:300 ;
+  text-align: ;
+  line-height:;
+  letter-spacing: 1.52em;
+  word-spacing: ;
+  text-transform: ;
+  text-decoration: overline double;
+  text-shadow:  ;
+  word-break: ;
+  word-wrap: ;
+  margin-left: ;
+  padding: ;
+  border-top: ;
+  border-bottom:2em dotted white ;
+  border-left: 2em solid black;
+  border-right: 1em wavy white;
+  border-color: ;
+  border-style: groove ;
+  border-radius: 100%;
+  list-style: ;
+  list-style-position: ;
+  list-style-type: ;
+
+  display: ;
+  position:;
+  top: ;
+  right: ;
+  bottom:;
+  left: ;
+  float:;
+  clear: ;
+  z-index: ;
+  visibility: ;
+  height: ;
+  width: ;
+  max-height: ;
+  max-width: ;
+  min-height: ;
+  min-width: ;
+  transform: rotate(12deg);
+   } 
+
+p {
+  color: white;
+  background:;
+  font-family: 'Times New Roman', serif;
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 800;
+  text-align: right;
+  line-height: 1em;
+
+  letter-spacing:-0.9em;
+  word-spacing:-0.75em ;
+  text-transform: capitalize;
+  text-decoration:;
+  word-break: ;
+  word-wrap: ;
+
+  margin: 1em 0;
+  padding: 1em;
+  border-top: 3em wavy grey;
+  border-bottom: 4em dotted lightgrey;
+  border-left: 2em double black;
+  border-right: ;
+  border-color: ;
+  border-style:;
+  border-radius: ;
+
+  list-style:sidama ;
+  list-style-position: ;
+  list-style-type: ;
+  display: grid;
+  position: ;
+  top: -1em;
+  right: ;
+  bottom: ;
+  left: ;
+  float: ;
+  clear: ;
+  z-index: ;
+  visibility: ;
+  height: ;
+  width: ;
+  max-height: ;
+  max-width: ;
+  min-height: ;
+  min-width: ;
+    }
+
+a {
+color:black;
+background-color: rgba(255, 255, 255, 0.5);
+font-family: Courier New;
+font-size:4em;
+font-style:oblique;
+font-weight:800;
+
+text-align:left;
+line-height:;
+letter-spacing:-0.4em;
+word-spacing:;
+text-transform:uppercase;
+text-decoration:wavy underline 0.3em white;
+word-break:;
+word-wrap:;
+
+padding: ;
+
+border-top:.5em  #00000000;
+border-bottom:.5em  #00000000;
+border-left:;
+border-right:;
+border-color:;
+border-style:;
+border-radius:100%;
+box-shadow: ;
+
+  }
+
+ul {
+  color: black;
+  background-color:;
+  font-family: ;
+  font-size: 2.5em;
+  font-style: ;
+  font-weight: ;
+  text-align: ;
+  line-height:0.92em;
+  letter-spacing: ;
+  word-spacing: -1em;
+  text-transform: ;
+  text-decoration: line-through dotted 1em white;
+  word-break: ;
+  word-wrap: ;
+
+
+  margin-left: 12em;
+  padding-left: 2em;
+  border: ;
+  border-top: ;
+  border-bottom: ;
+  border-left: ;
+  border-right:2em dotted white; 
+  border-color: ;
+  border-style: ;
+  border-radius: 5em;
+  list-style: inside disc;
+  list-style-position: ;
+  list-style-type: ;
+  display: ;
+  position:;
+  top: ;
+  right: ;
+  bottom: ;
+  left: ;
+  float:;
+  clear: ;
+  z-index:;
+  visibility: ;
+  height:;
+  width: ;
+  max-height: ;
+  max-width: ;
+  min-height: ;
+  min-width: ;
+
+  rotate:;
+}
+
+ol {
+  color: black;
+  background-color: white;
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  font-style: ;
+  font-weight: bold;
+  text-align: right;
+  line-height: 0.72em;
+  letter-spacing: ;
+  word-spacing: ;
+  text-transform: ;
+  text-decoration: ;
+  word-break: ;
+  word-wrap: ;
+  margin: 0.8em 0;
+  padding: 0.5em;
+  border: 2.3em dashed grey;
+  border-top: ;
+  border-bottom: ;
+  border-left: ;
+  border-right: ;
+  border-color: ;
+  border-style: ;
+  border-radius: ;
+  list-style: square outside;
+  list-style-position: ;
+  list-style-type: ;
+
+  display: ;
+  position: ;
+  top: ;
+  right: ;
+  bottom: ;
+  left: ;
+  float: ;
+  clear: ;
+  z-index:9 ;
+  visibility: ;
+  height: ;
+  width: ;
+  max-height: ;
+  max-width: ;
+  min-height: ;
+  min-width: ;
+}
+
+li {
+  color: ;
+  background-color: darkgrey;
+  font-family: ;
+  font-size: ;
+  font-style: ;
+  font-weight: ;
+  text-align: ;
+  line-height: 0.25em;
+  letter-spacing: ;
+  word-spacing:;
+  text-transform: ;
+  text-decoration: ;
+  word-break: ;
+  word-wrap: ;
+  margin-bottom: 1.2em;
+  padding: ;
+  border-left: 2em solid white;
+  border-top: ;
+  border-bottom: ;
+  border-right: ;
+  border-color: ;
+  border-style: ;
+  border-radius: 1em;
+  list-style: ;
+  list-style-position: ;
+  list-style-type: ;
+  display:;
+  position:;
+  top: ;
+  right: ;
+  bottom: ;
+  left: ;
+  float: ;
+  clear: ;
+  z-index: ;
+  visibility: ;
+  height: ;
+  width: ;
+  max-height: ;
+  max-width: ;
+  min-height: ;
+  min-width: ;
+  transform: skew(20deg);
+ }
+
+blockquote {
+  color: darkgray;
+  background-color: ghostwhite;
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  font-style: oblique;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 0.82em;
+  letter-spacing: ;
+  word-spacing: ;
+  text-transform: ;
+  text-decoration: ;
+  word-break: ;
+  word-wrap: ;
+  margin: 0.18em 0;
+  padding: 1em 0.9em;
+  border-left: 1em solid black;
+  border-top: ;
+  border-bottom: ;
+  border-right: ;
+  border-color: ;
+  border-style: ;
+  border-radius: 0.7em;
+  list-style: ;
+  list-style-position: ;
+  list-style-type: ;
+
+  display: ;
+  position: ;
+  top: ;
+  right: ;
+  bottom: ;
+  left: ;
+  float: ;
+  clear: ;
+  z-index:5 ;
+  visibility: ;
+  height: ;
+  width: ;
+  max-height: ;
+  max-width: ;
+  min-height: ;
+  min-width: ;
+}
+
+img  {
+  display: none;
+ }
+
+section {
+
+  border-left:2em dashed white  ; 
+  border-top:;
+  border-bottom: ;
+  border-right: ;
+  border-color: ;
+  border-style: ;
+  border-radius: 3em;
+  list-style: ;
+  list-style-position: ;
+  list-style-type: ;
+
+  
+  
+
+ }
+
+ .vector-page-toolbar{
+  display:none;
+ }
+ div#p-lang-btn{
+  display:none;
+ }
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    /* 其他样式规则以确保打印时没有额外的边距 */
+}

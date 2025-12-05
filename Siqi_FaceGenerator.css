@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: normal;
+    list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+   .cf:before, .cf:after { content: ""; display: table; }
+   .cf:after { clear: both; }
+   .cf { zoom: 1; }
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+
+
+body{
+	font-family: 'Old Standard TT', serif;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin:4%;
+}
+
+a{
+	text-decoration: none;
+	color :rgb(73, 23, 166);
+}
+
+.homepic {
+	width: 55%;
+}
+
+header {
+	 background-color: #848fdb;
+	 color: rgb(255, 255, 255); 
+	 padding: 30px 0px 30px 0px;
+	
+}
+.title {
+	float: left;
+	padding: 5px 0px;
+	margin:2%;
+	font-size: 30pt;
+	
+}
+
+
+
+nav1 {
+	float: right;
+	margin-right:2%;
+	
+}
+nav1 li {
+	display: inline-block;
+	margin: 23px 0px 0px 30px ;
+	border-top: 2px solid white;
+	padding: 8px 0px;
+	font-size: 20pt
+}
+
+h1{
+	font-size: 60pt;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	padding: 30px 5% 30px 0%;
+	border-bottom: 7px solid rgb(70, 0, 0);
+	float: right;
+	
+}
+h1 span{
+	padding: 0px 0px 30px 0px;
+	
+}
+.ul1 {
+	float: right;
+	display: inline-block;
+	margin: -550px 2% 0px 0% ;
+	font-size: 20pt;
+	width:36%;
+	
+}
+.ul2{
+	float: right;
+	display: inline-block;
+	margin: -500px 2% 0px 0% ;
+	font-size: 15pt;
+	width:36%;
+	
+}
+
+
+.grid {
+	margin: 30px 3% 0px 2%;
+	
+}
+.grid-box {
+	width:29%;
+	float: left;
+	margin: 0px 2% 0px 2%;
+
+}
+.grid2 {
+	margin: 0px 3% 0px 2%;
+	
+}
+.grid2-box {
+	width:29%;
+	float: left;
+	margin: 0px 2% 0px 2%;
+
+}
+
+@media(max-width:1200px){
+	h1{font-size:55pt; }
+	
+}
+	
+@media(max-width:1000px){
+	h1{font-size:45pt}
+	.ul1 {
+	float: right;
+	display: inline-block;
+	margin: -290px 2% 0px 0% ;
+	font-size: 15pt;
+	width:38%;}
+	.ul2 {
+	float: right;
+	display: inline-block;
+	margin: -260px 2% 0px 0% ;
+	font-size: 10pt;
+	width:38%;}
+	nav1 li{font-size: 15pt;}
+}
+	
+@media(max-width:800px){
+	h1{font-size:35pt}
+	.grid-box {
+		width:40%;
+	}
+}

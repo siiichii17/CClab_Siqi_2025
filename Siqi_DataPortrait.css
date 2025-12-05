@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix */
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+
+html, body { height:100%; }
+
+body {
+  font-family: 'Old Standard TT', serif;
+}
+
+/* 链接 */
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* 顶部导航 */
+header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+.title {
+  float: left;
+  padding: 5px 0;
+  margin: 2%;
+  font-size: 30pt;
+}
+
+nav1 {
+  float: right;
+  margin-right: 2%;
+}
+
+nav1 li {
+  display: inline-block;
+  margin: 23px 0 0 30px;
+  border-top: 2px solid white;
+  padding: 8px 0;
+  font-size: 20pt;
+}
+
+/* 图片不要被强制拉到 100%，按 HTML 写的 800px 显示 */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* 标题：占一整行，下划线，左右留 5% 边距 */
+h1 {
+  font-size: 60pt;
+  margin: 15px 5% 50px 5%;
+  padding: 30px 0;
+  float: none;
+  text-align: right;     /* ✅ 右对齐 Data */
+  border-bottom: none;  /* ✅ 关键：去掉整行下划线 */
+}
+
+h1 span {
+  display: inline-block;          /* ✅ 让 span 只包住文字宽度 */
+  padding-bottom: 20px;
+  border-bottom: 7px solid #000;  /* ✅ 下划线只在文字下 */
+}
+
+
+/* 图片 + 文字：左右排版，并且整体在标题下 5% 的缩进开始 */
+.img-text-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px 5% 40px 5%;
+  clear: both;
+}
+
+/* 左边图片：按你 HTML 写的宽度来 */
+.homepic img {
+  width: 800px;
+  height: auto;
+  display: block;
+}
+
+/* 右边整块文字区域 */
+.text-right {
+  max-width: 420px;   /* 控制文字行宽好读 */
+}
+
+/* 右边标题行 “My Mood in a Week” */
+.title-right {
+  font-size: 20pt;
+  margin-bottom: 12px;
+}
+
+/* 右边正文（所有说明文字） */
+.para-right {
+  font-size: 14pt;
+  line-height: 1.8;
+}
+
+/* 底部网格：先保留你原来的结构，方便以后放东西 */
+.grid {
+  margin: 30px 3% 0 2%;
+}
+
+.grid-box {
+  width: 29%;
+  float: left;
+  margin: 0 2% 0 2%;
+}
+
+.grid2 {
+  margin: 0 3% 0 2%;
+}
+
+.grid2-box {
+  width: 29%;
+  float: left;
+  margin: 0 2% 0 2%;
+}
+
+/* 响应式：中屏 */
+@media (max-width: 1200px) {
+  h1 { font-size: 55pt; }
+}
+
+/* 响应式：再小一点的屏幕 */
+@media (max-width: 1000px) {
+
+  h1 {
+    font-size: 45pt;
+  }
+
+  nav1 li {
+    font-size: 15pt;
+  }
+
+  .img-text-wrap {
+    gap: 20px;
+    margin: 30px 5%;
+  }
+
+  .homepic img {
+    width: 600px;
+  }
+
+  .text-right {
+    max-width: 360px;
+  }
+
+  .title-right {
+    font-size: 16pt;
+  }
+
+  .para-right {
+    font-size: 12pt;
+    line-height: 1.7;
+  }
+}
+
+/* 手机：改成上下排（如果你暂时不想上下排，可以把这一段删掉） */
+@media (max-width: 800px) {
+
+  h1 {
+    font-size: 35pt;
+  }
+
+  .img-text-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .homepic img {
+    width: 100%;
+  }
+
+  .text-right {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}

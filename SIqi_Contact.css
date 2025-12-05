@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: normal;
+    list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+   .cf:before, .cf:after { content: ""; display: table; }
+   .cf:after { clear: both; }
+   .cf { zoom: 1; }
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+
+
+body{
+	font-family: 'Old Standard TT', serif;
+	
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+.homepic {
+	width: 50%;
+	float:right;
+	margin-top: -33%;
+	margin-right: 2%;
+}
+
+header {
+	 background-color: rgb(0, 0, 0);
+	 color: white; 
+	 padding: 30px 0px 30px 0px;
+	
+}
+a{
+	text-decoration: none;
+	color :rgba(255, 255, 255, 0.58);
+}
+.title {
+	float: left;
+	padding: 5px 0px;
+	margin:2%;
+	font-size: 30pt;
+	
+	
+}
+
+li{
+	font-size: 20pt;
+}
+
+
+nav1 {
+	float: right;
+	margin-right:2%;
+	
+}
+nav1 li {
+	display: inline-block;
+	margin: 23px 0px 0px 30px ;
+	border-top: 2px solid white;
+	padding: 8px 0px;
+	font-size: 20pt
+}
+
+h1{
+	font-size: 9em;
+	margin:15px 0px 0px 0px ;
+	text-align: center;
+
+	
+}
+.border{
+	width:70%;
+	border-bottom: 9px solid black;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	
+}
+
+p{
+	font-size: 25pt;
+	margin-left:6%;
+	margin-top: 50px;
+	
+}
+
+
+
+
+
+
+@media(max-width:1200px){
+	h1{font-size:8em }
+	
+}
+@media(max-width:1000px){
+	h1{font-size:7em}
+	p{font-size: 20pt;}
+	
+	nav1 li{font-size: 15pt;}
+}
+
+@media(max-width:800px){
+	h1{font-size:6em}
+
+}
+@media(max-width:700px){
+	h1{font-size:5em}
+	.homepic {
+	width: 60%;	
+	float: left;
+	margin-top: 30px;
+	margin-left: 23%;
+	
+}
+	.title{
+		font-size: 20pt;
+	}
+	
+}
+@media(max-width:600px){
+	h1{font-size:4em}
+	
+}
+@media(max-width:500px){
+	h1{font-size:3em}
+}
+
