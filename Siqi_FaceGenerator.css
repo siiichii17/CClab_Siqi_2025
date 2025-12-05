@@ -157,12 +157,27 @@ h1 span {
   width: 100%;
   max-width: 400px;
   margin: 40px auto;
+  position: relative;
+  z-index: 1;
+
 }
 
 #p5-face canvas {
   width: 100% !important;
   height: auto !important;
   display: block;
+}
+
+.p5-instruction {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-left: 0;        /* 和标题左对齐 */
+  margin-top: -10px;     /* 贴近标题 */
+  margin-bottom: 20px;   /* 与画布保持漂亮间距 */
+  font-weight: normal;
+    position: relative;
+  z-index: 2;
+  
 }
 
 
