@@ -47,22 +47,30 @@
       </div>
 
       <!-- 右边：标题 + 文本叙述 -->
+     
       <div class="text-right">
-    <ul class="ul2">
-          <li>
-            For this project, I decided to make a pixel-style self-portrait of my face. I used simple rectangles to build my hair, squares for eyes, cheeks, and mouth. I added interaction so that when I move the mouse from left to right, my hair color will change randomly, and when I click the mouse, the mouth will become a smile, and the highlight of the eyes will also change from a square to stars.  And also, my whole face will rotate too.
-        </li>
-        </ul>
+        <p class="title-right">Design Concept: </p>
+
+        <p class="para-right">
+           For this project, I decided to make a pixel-style self-portrait of my face. I used simple rectangles to build my hair, squares for eyes, cheeks, and mouth. I added interaction so that when I move the mouse from left to right, my hair color will change randomly, and when I click the mouse, the mouth will become a smile, and the highlight of the eyes will also change from a square to stars.  And also, my whole face will rotate too.The most fun part was the hair, because in real life I love dyeing my hair, so I wanted to show this feature by letting the hair color keep changing. The challenging part was the interaction part. I discovered that even with very simple, geometric forms, I can still show personality and emotion like I did with a smile by using a triangle. Small details, like the eye highlight or the mouth shape, make a big difference in how the face feels. If I expand this later, I might try adding blinking eyes or more backgrounds because at first I want to add when my face scale to small the background will show us more shapes, but right now I still want to figure out how to do it, but i know it’s a challenge for me, but still interesting for me during the whole time. 
+          <br><br>
+  </p>
       </div>
 
     </div>
 
-    <!-- 下面这个 section 以后可以放 p5 的 iframe 或其他内容 -->
+    <!-- 下面这个 section 放 p5 sketch -->
     <section class="grid cf">
-      <!-- 这里先留空，等你要嵌 p5 的时候再加 iframe -->
+      <!-- p5 画布显示位置 -->
+      <h2 class="p5-title">Interactive Face Generator</h2>
+      <div id="p5-face"></div>
     </section>
 
   </main>
+
+  <!-- p5.js 库 和 你的 sketch 代码 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="Siqi_FaceGenerator.js"></script>
 
 </body>
 </html>
