@@ -29,8 +29,8 @@ html, body { height:100%; }
 
 body {
    font-family: 'Old Standard TT', serif;
-   background-color: #EDE6DB; /* Soft Beige */
-   color: #5A5A5A; /* Neutral Gray */
+   background-color: #ffffff; /* Soft Beige */
+   color: #000000; /* Neutral Gray */
 }
 
 img {
@@ -43,7 +43,7 @@ img {
 }
 
 header {
-   background-color: #A3A598; /* Soft Olive Green */
+   background-color: #000000; /* Soft Olive Green */
    color: #F5F0E6; /* Off White */
    padding: 30px 0px 30px 0px;
 }
@@ -67,7 +67,7 @@ nav1 {
 nav1 li {
    display: inline-block;
    margin: 23px 0px 0px 30px;
-   border-top: 2px solid #F5F0E6; /* Off White */
+   border-top: 2px solid #ffffff; /* Off White */
    padding: 8px 0px;
    font-size: 20pt;
 }
@@ -75,14 +75,14 @@ nav1 li {
 h1 {
    font-size: 5em;
    margin: 15px 0px 0px 0px;
-   color: #343c30; /* Warm Gray */
+   color: #ffffff; /* Warm Gray */
    stroke-width: 3em;
 }
 
 h1 span {
    padding: 10px 15px 10px 10px;
    margin: 2%;
-   background-color: #C8C2B4; /* Soft Taupe */
+   background-color: #636363; /* Soft Taupe */
 }
 
 img.move {
@@ -100,11 +100,11 @@ img.move {
 
 h2 {
    font-size: 6em;
-   color: #F5F0E6; /* Off White */
+   color: #ffffff; /* Off White */
 }
 
 h2 span {
-   background-color: #BFB8AA; /* Warm Beige */
+   background-color: #b0b0b0; /* Warm Beige */
    padding: 10px 15px 10px 10px;
    margin: 2%;
 }
@@ -112,7 +112,7 @@ h2 span {
 h3 {
    font-size: 6em;
    margin-left: 5%;
-   color: #8D8C84; /* Warm Gray */
+   color: #878787; /* Warm Gray */
 }
 
 .grid {
@@ -124,12 +124,12 @@ h3 {
    width: 29.32%;
    float: left;
    margin: 0px 4% 30px 0%;
-   background-color: #D0C8BA; /* Light Taupe */
+   background-color: #c9c9c9; /* Light Taupe */
 }
 
 a {
    text-decoration: none;
-   color: #5A5A5A; /* Neutral Gray */
+   color: #818181; /* Neutral Gray */
 }
 
 h4 {
@@ -146,7 +146,7 @@ h4 {
 
 h5 {
    font-size: 30px;
-   color: #8D8C84; /* Warm Gray */
+   color: #858585; /* Warm Gray */
 }
 
 h5a {
@@ -221,11 +221,120 @@ nav1 a:hover {
    border-bottom: 2px solid #4b5160;
 }
 /* 首页大图 hover 微亮 */
-img.move {
+/* 首页大图（video）左右移动 + hover */
+.homepic video.move {
+   position: relative;
+   animation-duration: 5s;
+   animation-name: left-right;
+   animation-iteration-count: infinite;
    transition: filter 0.3s ease;
+   width: 100%;
+   height: auto;
+   display: block;
 }
 
-img.move:hover {
+.homepic video.move:hover {
    filter: brightness(1.1) contrast(1.05);
 }
+
+
+/* ================== Future Background Section ================== */
+
+.future-bg {
+  position: relative;
+  padding: 80px 0;
+  color: white;
+  font-family: 'Courier New', monospace;
+  background-image: url('second/blue3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  cursor: url('second/flower.png?v=1'), auto;
+  overflow: hidden;
+  opacity: 0;                 /* 初始隐藏，加载后淡入 */
+  transition: opacity 1.5s ease-in-out;
+}
+
+/* 背景上重复的句子 */
+.future-bg::before {
+  content: 'HOW CAN HUMANITY LIVE IN THE FUTURE? HOW CAN HUMANITY LIVE IN THE FUTURE? HOW CAN HUMANITY LIVE IN THE FUTURE? HOW CAN HUMANITY LIVE IN THE FUTURE? ';
+  position: fixed;
+  top: 0;
+  left: 10px;
+  width: 800px;
+  height: 100%;
+  color: rgba(173, 216, 230, 0.3);
+  font-family: "Times New Roman", serif;
+  font-size: 100px;
+  line-height: 1.2;
+  white-space: pre-wrap;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.future-content {
+  position: relative;
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  opacity: 0;                     /* 初始隐藏，加载后淡入 */
+  transition: opacity 1.5s ease-in-out;
+  z-index: 1;
+}
+
+.future-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(153, 50, 166);
+  background-color: rgb(24, 87, 206);
+  padding: 10px;
+}
+
+.future-description {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.future-year {
+  position: fixed;
+  top: 40%;
+  left: 20%;
+  font-size: 5em;
+  color: rgb(82, 0, 154);
+  transition: transform 0.3s ease, border-top 0.3s ease;
+  z-index: 2;
+}
+
+.future-year:hover {
+  transform: scale(2.2);
+  border-top: 10px solid rgb(255, 157, 255);
+}
+
+@keyframes randomSizeFuture {
+  0%, 100% {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  25% {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  50% {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  75% {
+    font-size: 22px;
+    font-weight: normal;
+  }
+}
+
+
+
 
