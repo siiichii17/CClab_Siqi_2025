@@ -73,7 +73,7 @@ img {
 /* 标题：占一整行，下划线，左右留 5% 边距 */
 h1 {
   font-size: 60pt;
-  margin: 15px 5% 50px 5%;
+  margin: 15px 2% 50px 2%;
   padding: 30px 0;
   float: none;
   text-align: right;     /* ✅ 右对齐 Data */
@@ -98,7 +98,7 @@ h1 span {
 
 /* 左边图片：按你 HTML 写的宽度来 */
 .homepic img {
-  width: 720px;
+  width: 800px;
   height: auto;
   display: block;
 }
@@ -110,14 +110,14 @@ h1 span {
 
 /* 右边标题行 “My Mood in a Week” */
 .title-right {
-  font-size: 15pt;
+  font-size: 16pt;
   margin-bottom: 12px;
 }
 
 /* 右边正文（所有说明文字） */
 .para-right {
   font-size: 14pt;
-  line-height: 1.8;
+  line-height: 1.2;
 }
 
 /* 底部网格：先保留你原来的结构，方便以后放东西 */
@@ -140,6 +140,39 @@ h1 span {
   float: left;
   margin: 0 2% 0 2%;
 }
+
+
+/* --- Emotional Eating Game p5 标题 --- */
+.p5-title {
+  text-align: left;
+  font-size: 32px;
+  margin: 40px 0 10px 2%;   /* 和上面图片左对齐 */
+  color: #000;
+  font-weight: bold;
+}
+
+/* 标题下面的小说明文字 */
+.p5-instruction {
+  margin: 0 0 10px 2%;
+  font-size: 14pt;
+  line-height: 1.4;
+}
+
+/* p5 游戏容器 */
+#p5-game {
+  width: 100%;
+  max-width: 1000px;          /* 对应 createCanvas(600, 400) */
+  margin: 20px auto 80px auto;
+}
+
+/* 让 canvas 自适应缩放 */
+#p5-game canvas {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+
 
 /* 响应式：中屏 */
 @media (max-width: 1200px) {

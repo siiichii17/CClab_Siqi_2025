@@ -105,30 +105,30 @@ h1 span {
 
 /* 右边整块文字区域 */
 .text-right {
-  max-width: 420px;   /* 控制文字行宽好读 */
+  max-width: 600px;   /* 控制文字行宽好读 */
 }
 
 /* 右边标题行 “My Mood in a Week” */
 .title-right {
-  font-size: 20pt;
-  margin-bottom: 12px;
+  font-size: 18pt;
+  margin-bottom: 10px;
 }
 
 /* 右边正文（所有说明文字） */
 .para-right {
-  font-size: 14pt;
-  line-height: 1.8;
+  font-size: 15pt;
+  line-height: 1.2;
 }
 
 /* 底部网格：先保留你原来的结构，方便以后放东西 */
 .grid {
-  margin: 30px 3% 0 2%;
+  margin: 30px 2% 0 2%;
 }
 
 .grid-box {
   width: 29%;
   float: left;
-  margin: 0 2% 0 2%;
+  margin: 0 0% 0 2%;
 }
 
 .grid2 {
@@ -140,6 +140,31 @@ h1 span {
   float: left;
   margin: 0 2% 0 2%;
 }
+
+/* p5 标题样式 */
+.p5-title {
+   text-align: left;
+  font-size: 32px;
+  margin: 40px 0 10px 3%;   /* ← 左边保持和图片一样的5% */
+  color: #000;
+  font-weight: bold;
+}
+
+/* p5 Data Portrait 容器 */
+#p5-data-canvas {
+  width: 100%;
+  max-width: 600px;      /* 对应 createCanvas(600, 600) */
+  margin: 20px auto 80px auto;
+}
+
+/* 让画布在不同屏幕下自适应宽度 */
+#p5-data-canvas canvas {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+
 
 /* 响应式：中屏 */
 @media (max-width: 1200px) {

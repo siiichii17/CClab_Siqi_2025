@@ -4,7 +4,7 @@ let fallY = 0;
 let bgImg;
 
 function preload() {
-  bgImg = loadImage("image/glitch.jpg");
+  bgImg = loadImage("image/glitch.jpg"); // ⭐ 一定要有 image/
 }
 
 function setup() {
